@@ -9,7 +9,7 @@ Using:
 
 - Pull this docker image
 - run image with add 2 enviroment variable (to work smoothly, you should add variables)
-   - **-e il=PLATE-NUMBER-OF-PROVINCES** (like 1, 16, 51)
+   - **-e il=PLATE-NUMBER-OF-PROVINCE** (like 1, 16, 51)
    - **-e key=OPEN-WEATHER-MAP-API-KEY** (firstly, sign-up on this link: https://home.openweathermap.org/users/sign_up and create a free API key)
 - Go this url with 5000 port: http://localhost:5000
 
