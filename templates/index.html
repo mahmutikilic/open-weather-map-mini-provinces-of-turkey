@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hava Durumu Uygulaması</title>
+    <link rel="stylesheet" type="text/css" href={{url_for('static', filename='style.css')}}>
+</head>
+<body>
+	{% if weather_data %}
+		<h2>{{ weather_data['name'] }} İlimiz İçin Hava Durumu:</h2> 
+		<br/>
+		<p>Sıcaklık: {{ weather_data['main']['temp'] }} &#8451;</p>
+		<br/>
+		<p>Nem: {{ weather_data['main']['humidity'] }}%</p>
+		<br/>
+		<p>Rüzgar: {{ weather_data['wind']['speed'] }} m/s</p>
+		<br/>
+		<p>Açıklama(İngilizce): {{ weather_data['weather'][0]['description'] }}</p>
+	{% endif %}
+</body>
+</html>
