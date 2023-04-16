@@ -1,7 +1,0 @@
-FROM python:3.8.16-slim-bullseye
-LABEL version="0.1"
-COPY . /app
-WORKDIR /app
-RUN pip install -r requirements.txt
-EXPOSE 5000
-CMD ["python", "app.py"]
